@@ -78,7 +78,7 @@ namespace Ejercicios
 
         public void EnviarCorreo(int nuevaContra, string correo)
         {
-            string contraseña = "mamazoila";
+            string contraseña = "contraseña";
             string mensaje = string.Empty;
             string destinatario = correo;
             string remitente = "guillermo_quezada@outlook.com";
@@ -88,7 +88,7 @@ namespace Ejercicios
 
             SmtpClient smtp = new SmtpClient("smtp-mail.outlook.com", 587);
             smtp.EnableSsl = true;
-            smtp.Credentials = new NetworkCredential("guillermo_quezada@outlook.com", "Guille4x+");
+            smtp.Credentials = new NetworkCredential("correoemitente@outlook.com", "contraseña");
 
             try
             {
